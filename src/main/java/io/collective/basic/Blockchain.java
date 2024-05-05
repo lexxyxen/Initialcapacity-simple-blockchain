@@ -1,18 +1,22 @@
 package io.collective.basic;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Blockchain {
+    private final List<Block> blocksArrList = new ArrayList<>();
 
     public boolean isEmpty() {
-        return false;
+        return blocksArrList.isEmpty();
     }
 
     public void add(Block block) {
+        blocksArrList.add(block);
     }
 
     public int size() {
-        return 0;
+        return blocksArrList.size();
     }
 
     public boolean isValid() throws NoSuchAlgorithmException {
@@ -22,6 +26,7 @@ public class Blockchain {
         // todo - check previous hash matches
 
         // todo - check hash is correctly calculated
+
 
         return false;
     }
