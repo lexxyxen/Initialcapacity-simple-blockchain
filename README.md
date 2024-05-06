@@ -10,4 +10,4 @@ The exercise - download the codebase and get the tests to pass!
 - Move to isEmpty and Size.
 - Ensure the negative tests pass!
 
-- ✓ Allyx Lichkov
+✓ Allyx Lichkov
