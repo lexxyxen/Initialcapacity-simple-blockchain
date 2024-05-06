@@ -1,4 +1,4 @@
-# Simple blockchain
+# My implementation of the Simple Blockchain Assignment
 
 An exercise to help individuals understand the basics of blockchain.
 
@@ -10,8 +10,4 @@ The exercise - download the codebase and get the tests to pass!
 - Move to isEmpty and Size.
 - Ensure the negative tests pass!
 
-Hope you enjoy the exercise!
-
-Thanks, @barinek
-
-© 2022 by Continuum Collective, Inc. All rights reserved.
+- ✓ Allyx Lichkov
