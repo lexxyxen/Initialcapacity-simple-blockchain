@@ -21,14 +21,20 @@ public class Blockchain {
 
     public boolean isValid() throws NoSuchAlgorithmException {
 
-        // todo - check mined
+        if(blocksArrList.isEmpty()){
+            return true;
+        }
+        String expectedPrevHash = "0";
 
-        // todo - check previous hash matches
-
-        // todo - check hash is correctly calculated
-
-
-        return false;
+        for (Block block : blocksArrList) {
+            if (!isMined(block) ||
+                    !block.getHash().equals(block.calculatedHash()) ||
+                    !block.getPreviousHash().equals(expectedPrevHash)){
+                return false;
+            }
+            expectedPrevHash = block.getHash();
+        }
+        return true;
     }
 
     /// Supporting functions that you'll need.
